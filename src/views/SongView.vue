@@ -11,9 +11,10 @@
         <button
           type="button"
           @click.prevent="newSong(song)"
-          class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none"
+          class="z-50 h-24 w-24 text-1xl bg-white text-black rounded-full focus:outline-none"
         >
-          <i class="fas" :class="{ 'fa-play': !playing, 'fa-pause': playing }"></i>
+          Load<br />Song
+          <!-- <i class="fas" :class="{ 'fa-play': !playing, 'fa-arrows-rotate': playing }"></i> -->
         </button>
         <div class="z-50 text-left ml-8">
           <!-- Song Info -->
