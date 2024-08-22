@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white rounded border border-gray-200 relative flex flex-col">
     <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
-      <span class="card-title">Upload</span>
+      <span class="card-title">{{ $t('upload.upload') }}</span>
       <i class="fas fa-upload float-right text-green-400 text-2xl"></i>
     </div>
     <div class="p-6">
@@ -17,7 +17,7 @@
         @drop.prevent.stop="upload($event)"
         class="w-full px-10 py-20 rounded text-center cursor-pointer border border-dashed border-gray-400 text-gray-400 transition duration-500 hover:text-white hover:bg-green-400 hover:border-green-400 hover:border-solid"
       >
-        <h5>Drop your files here</h5>
+        <h5>{{ $t('upload.drop') }}</h5>
       </div>
       <input type="file" multiple @change="upload($event)" class="hidden" />
       <hr class="my-6" />

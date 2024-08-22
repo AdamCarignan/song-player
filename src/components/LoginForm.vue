@@ -9,23 +9,23 @@
   <vee-form :validation-schema="loginSchema" @submit="login">
     <!-- Email -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Email</label>
+      <label class="inline-block mb-2">{{ $t('login.email') }}</label>
       <vee-field
         name="email"
         type="email"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-        placeholder="Enter Email"
+        :placeholder="$t('login.email_placeholder')"
       />
       <error-message class="text-red-600" name="email" />
     </div>
     <!-- Password -->
     <div class="mb-3">
-      <label class="inline-block mb-2">Password</label>
+      <label class="inline-block mb-2">{{ $t('login.password') }}</label>
       <vee-field
         name="password"
         type="password"
         class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-        placeholder="Password"
+        :placeholder="$t('login.password_placeholder')"
       />
       <error-message class="text-red-600" name="password" />
     </div>
@@ -34,7 +34,7 @@
       type="submit"
       class="block w-full bg-purple-600 text-white py-1.5 px-3 rounded transition hover:bg-purple-700"
     >
-      Submit
+      {{ $t('login.submit') }}
     </button>
   </vee-form>
 </template>
@@ -55,7 +55,7 @@ export default {
       login_in_submission: false,
       login_show_alert: false,
       login_alert_variant: 'bg-blue-500',
-      login_alert_msg: "Please wait! We're logging you in."
+      login_alert_msg: this.$t('login.alert.wait')
     }
   },
   methods: {
@@ -63,7 +63,7 @@ export default {
       this.login_in_submission = true
       this.login_show_alert = true
       this.login_alert_variant = 'bg-blue-500'
-      this.login_alert_msg = "Please wait! We're logging you in."
+      this.login_alert_msg = this.$t('login.alert.wait')
 
       try {
         await this.authenticate(values)
@@ -71,12 +71,12 @@ export default {
         this.login_in_submission = false
         this.login_show_alert = true
         this.login_alert_variant = 'bg-red-500'
-        this.login_alert_msg = 'There was an error logging in. Please try again.'
+        this.login_alert_msg = this.$t('login.alert.error')
         return
       }
 
       this.login_alert_variant = 'bg-green-500'
-      this.login_alert_msg = 'You have successfully logged in.'
+      this.login_alert_msg = this.$t('login.alert.success')
 
       window.location.reload()
     },

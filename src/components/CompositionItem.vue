@@ -9,7 +9,7 @@
         <i class="fa fa-times"></i>
       </button>
       <button
-        @click.prevent="showForm = !shoowForm"
+        @click.prevent="showForm = !showForm"
         class="ml-1 py-1 px-2 text-sm rounded text-white bg-blue-600 float-right"
       >
         <i class="fa fa-pencil-alt"></i>
@@ -25,23 +25,23 @@
       </div>
       <vee-form :validation-schema="schema" :initial-values="song" @submit="edit">
         <div class="mb-3">
-          <label class="inline-block mb-2">Song Title</label>
+          <label class="inline-block mb-2">{{ $t('composition_item.title') }}</label>
           <vee-field
             name="modified_name"
             type="text"
             class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-            placeholder="Enter Song Title"
+            :placeholder="$t('composition_item.title_placeholder')"
             @input="updateUnsavedFlag(true)"
           />
           <error-message class="text-red-600" name="modified_name" />
         </div>
         <div class="mb-3">
-          <label class="inline-block mb-2">Genre</label>
+          <label class="inline-block mb-2">{{ $t('composition_item.genre') }}</label>
           <vee-field
             name="genre"
             type="text"
             class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-            placeholder="Enter Genre"
+            :placeholder="$t('composition_item.genre_placeholder')"
             @input="updateUnsavedFlag(true)"
           />
           <error-message class="text-red-600" name="genre" />
@@ -51,7 +51,7 @@
           type="submit"
           class="py-1.5 px-3 rounded text-white bg-green-600"
         >
-          Submit
+          {{ $t('composition_item.submit') }}
         </button>
         <button
           :disabled="in_submission"
@@ -59,7 +59,7 @@
           class="py-1.5 px-3 rounded text-white bg-gray-600"
           @click.prevent="showForm = false"
         >
-          Go Back
+          {{ $t('composition_item.go_back') }}
         </button>
       </vee-form>
     </div>

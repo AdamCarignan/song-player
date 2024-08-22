@@ -1,7 +1,10 @@
 <template>
   <main>
     <div class="about">
-      <h1>This is an about page</h1>
+      <h1>{{ $t('about.title') }}</h1>
+      <p>
+        {{ $t('about.content') }}
+      </p>
     </div>
   </main>
 </template>

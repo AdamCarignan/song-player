@@ -1,0 +1,84 @@
+{
+  "home": {
+    "listen": "Listen to Great Music!",
+    "songs": "Songs"
+  },
+  "song": {
+    "comment_count": "No comments | 1 comment | {count} comments",
+    "load": "Load",
+    "comment_placeholder": "Enter your comment",
+    "submit": "Submit",
+    "latest": "Latest",
+    "oldest": "Oldest"
+  },
+  "register": {
+    "accept": "I accept the {0}",
+    "tos": "Terms of Service"
+  },
+  "manage": {
+    "my_songs": "My Songs"
+  },
+  "upload": {
+    "upload": "Upload",
+    "drop": "Drop your files here"
+  },
+  "login": {
+    "login": "Login",
+    "email": "Email",
+    "email_placeholder": "Enter your email",
+    "password": "Password",
+    "password_placeholder": "Enter your password",
+    "alert": {
+      "wait": "Please wait! We're logging you in.",
+      "error": "There was an error logging you in. Please try again.",
+      "success": "You have successfully logged in."
+    },
+    "submit": "Submit"
+  },
+  "registeration_form": {
+    "register": "Register",
+    "name": "Name",
+    "name_placeholder": "Enter your name",
+    "email": "Email",
+    "email_placeholder": "Enter your email",
+    "age": "Age",
+    "age_placeholder": "Enter your age",
+    "country": "Country",
+    "country_placeholder": "Enter your country",
+    "password": "Password",
+    "password_placeholder": "Enter your password",
+    "confirm_password": "Confirm Password",
+    "confirm_password_placeholder": "Confirm your password",
+    "alert": {
+      "wait": "Please wait! We're registering you.",
+      "error": "There was an error registering you. Please try again.",
+      "success": "You have successfully registered."
+    },
+    "submit": "Submit"
+  },
+  "composition_item": {
+    "title": "Song Title",
+    "title_placeholder": "Enter the title of the song",
+    "genre": "Genre",
+    "genre_placeholder": "Enter the genre of the song",
+    "submit": "Submit",
+    "go_back": "Go Back"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "title": "Your Account"
+  },
+  "header": {
+    "title": "Music",
+    "about": "About",
+    "auth": "Login / Register",
+    "manage": "Manage Songs",
+    "log_out": "Log Out",
+    "change_language": "Change Language"
+  },
+  "about": {
+    "title": "About Song Player",
+    "content": "Song Player is a music streaming service that allows you to listen to your favorite songs. You can also upload your own songs and share them with the world."
+  }
+}

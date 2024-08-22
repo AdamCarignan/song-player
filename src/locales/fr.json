@@ -1,0 +1,84 @@
+{
+  "home": {
+    "listen": "Écoutez de la bonne musique!",
+    "songs": "Chansons"
+  },
+  "song": {
+    "comment_count": "Aucun commentaire | 1 commentaire | {count} commentaires",
+    "load": "Charger",
+    "comment_placeholder": "Entrez votre commentaire",
+    "submit": "Soumettre",
+    "latest": "Dernier",
+    "oldest": "Le plus ancien"
+  },
+  "register": {
+    "accept": "J'accepte les {0}",
+    "tos": "Conditions d'utilisation"
+  },
+  "manage": {
+    "my_songs": "Mes chansons"
+  },
+  "upload": {
+    "upload": "Télécharger",
+    "drop": "Déposez vos fichiers ici"
+  },
+  "login": {
+    "login": "Connexion",
+    "email": "Email",
+    "email_placeholder": "Entrez votre email",
+    "password": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "alert": {
+      "wait": "Veuillez patienter! Nous vous connectons.",
+      "error": "Une erreur s'est produite lors de votre connexion. Veuillez réessayer.",
+      "success": "Vous êtes connecté avec succès."
+    },
+    "submit": "Soumettre"
+  },
+  "registeration_form": {
+    "register": "S'inscrire",
+    "name": "Nom",
+    "name_placeholder": "Entrez votre nom",
+    "email": "Email",
+    "email_placeholder": "Entrez votre email",
+    "age": "Âge",
+    "age_placeholder": "Entrez votre âge",
+    "country": "Pays",
+    "country_placeholder": "Entrez votre pays",
+    "password": "Mot de passe",
+    "password_placeholder": "Entrez votre mot de passe",
+    "confirm_password": "Confirmez le mot de passe",
+    "confirm_password_placeholder": "Confirmez votre mot de passe",
+    "alert": {
+      "wait": "Veuillez patienter! Nous vous inscrivons.",
+      "error": "Une erreur s'est produite lors de votre inscription. Veuillez réessayer.",
+      "success": "Vous êtes inscrit avec succès."
+    },
+    "submit": "Soumettre"
+  },
+  "composition_item": {
+    "title": "Titre de la chanson",
+    "title_placeholder": "Entrez le titre de la chanson",
+    "genre": "Genre",
+    "genre_placeholder": "Entrez le genre de la chanson",
+    "submit": "Soumettre",
+    "go_back": "Retour"
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "title": "Bienvenue à Song Player"
+  },
+  "header": {
+    "title": "Musique",
+    "about": "À propos",
+    "manage": "Gérer chansons",
+    "auth": "Connexion / S'inscrire",
+    "log_out": "Déconnexion",
+    "change_language": "Changer de langue"
+  },
+  "about": {
+    "title": "À propos de Song Player",
+    "content": "Song Player est une application de musique qui vous permet de télécharger et de gérer vos chansons préférées. Vous pouvez écouter de la musique, commenter des chansons et gérer votre collection de chansons."
+  }
+}
