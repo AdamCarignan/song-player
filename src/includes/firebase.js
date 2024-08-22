@@ -15,6 +15,9 @@ firebase.initializeApp(firebaseConfig)
 
 const auth = firebase.auth()
 const db = firebase.firestore()
+db.enablePersistence().catch((err) => {
+  console.error(`Frirebase error: ${err}`)
+})
 const storage = firebase.storage()
 
 const usersCollection = db.collection('users')
