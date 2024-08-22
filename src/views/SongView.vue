@@ -47,7 +47,7 @@
               as="textarea"
               name="comment"
               class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded mb-4"
-              placeholder="{{ $t('song.comment_placeholder') }}"
+              :placeholder="$t('song.comment_placeholder')"
             ></vee-field>
             <error-message name="comment" class="text-red-600" />
             <button
@@ -126,12 +126,14 @@ export default {
       })
     }
   },
-  async created() {
-    const docSnapshot = await songsCollection.doc(this.$route.params.id).get()
-    !docSnapshot.exists ? this.$router.push({ name: 'Home' }) : (this.song = docSnapshot.data())
-    const { sort } = this.$route.query
-    this.sort = sort === '1' || sort === '2' ? sort : '1'
-    this.getComments()
+  async beforeRouteEnter(to, from, next) {
+    const docSnapshot = await songsCollection.doc(to.params.id).get()
+    next((vm) => {
+      !docSnapshot.exists ? vm.$router.push({ name: 'Home' }) : (vm.song = docSnapshot.data())
+      const { sort } = vm.$route.query
+      vm.sort = sort === '1' || sort === '2' ? sort : '1'
+      vm.getComments()
+    })
   },
   methods: {
     async addComment(values, { resetForm }) {

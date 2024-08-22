@@ -5,19 +5,18 @@ const routes = [
   {
     name: 'home',
     path: '/',
-    component: () => import('../views/HomeView.vue')
+    component: () => import('@/views/HomeView.vue')
   },
   {
     name: 'about',
     path: '/about',
-    component: () => import('../views/AboutView.vue')
+    component: () => import('@/views/AboutView.vue')
   },
   {
     name: 'manage',
     path: '/manage',
-    component: () => import('../views/ManageView.vue'),
+    component: () => import('@/views/ManageView.vue'),
     beforeEnter: (to, from, next) => {
-      console.log('Before entering the manage route')
       next()
     },
     meta: {
@@ -27,7 +26,7 @@ const routes = [
   {
     name: 'song',
     path: '/song/:id',
-    component: () => import('../views/SongView.vue')
+    component: () => import('@/views/SongView.vue')
   },
   {
     path: '/:catchAll(.*)*',
