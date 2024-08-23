@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshot SongItem.vue > Renders Correctly 1`] = `
+<div
+  id="song-id-abc"
+>
+  <div>
+    <router-link-stub
+      class="font-bold block text-gray-600"
+      custom="false"
+      to="[object Object]"
+    />
+    <span
+      class="text-gray-500 text-sm"
+    >
+      song name
+    </span>
+  </div>
+  <div
+    class="text-gray-600 text-lg"
+  >
+    <router-link-stub
+      custom="true"
+      to="[object Object]"
+    />
+  </div>
+</div>
+`;
