@@ -17,7 +17,7 @@ import progressBar from '@/includes/progress_bar'
 
 registerSW({ immediate: true })
 
-progressBar(router)
+// progressBar(router)
 
 let app
 
